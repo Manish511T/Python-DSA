@@ -1,11 +1,11 @@
 def printPattern(n):
-    patternSize = 1
+    patternSize = n
     for i in range(1, n+1):
         for j in range(patternSize):
-            print('*', end=' ')
-        patternSize +=1
+            print("*", end=' ')
+        patternSize -=1
         print()
-
+        
 
 n = int(input("Enter a number: "))
 printPattern(n)
