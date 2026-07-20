@@ -1,7 +1,7 @@
 def printPattern(n):
     patternSize = 1
     for i in range(1, n+1):
-        for j in range(patternSize):
+        for j in range(1,patternSize+1):
             print('*', end=' ')
         patternSize +=1
         print()
