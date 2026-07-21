@@ -9,5 +9,6 @@ def printPattern(n):
         print()
         
 
+
 n = int(input("Enter a number: "))
 printPattern(n)
