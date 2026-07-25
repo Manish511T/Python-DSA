@@ -1,14 +1,33 @@
+'''
+n=7
+* * * * 
+* * * 
+* * 
+* 
+* * 
+* * * 
+* * * * 
+'''
+
+
 def printPattern(n):
-    patternSize = n
+    mid = n//2 +1
+    patternSize = mid
+
     for i in range(1, n+1):
-        for j in range(1,patternSize+1):
-            print(" ", end=' ')
-        for j in range(1, i+1):
+        for j in range(1, patternSize+1):
             print('*', end=' ')
-        patternSize -=1
+        if i<mid:
+            patternSize -=1
+        else:
+            patternSize +=1
+
         print()
-        
 
 
 n = int(input("Enter a number: "))
-printPattern(n)
+if n%2==0:
+    print("Row must be an odd number!")
+else:
+    printPattern(n)
+
