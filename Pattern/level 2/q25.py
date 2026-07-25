@@ -1,25 +1,10 @@
-'''
-Enter a number: 11
-          * 
-        * * * 
-      * * * * * 
-    * * * * * * * 
-  * * * * * * * * * 
-* * * * * * * * * * * 
-  * * * * * * * * * 
-    * * * * * * * 
-      * * * * * 
-        * * * 
-          * 
-'''
-
 
 def printPattern(n):
     mid = n//2+1
     space = mid-1
     patternSize = 1
 
-    for i in range(1, n+1):
+    for i in range(1, n):
         for j in range(1,space+1):
             print("  ", end='')
         for j in range(1, patternSize+1):
@@ -35,7 +20,4 @@ def printPattern(n):
 
 
 n = int(input("Enter a number: "))
-if n%2==0:
-    print("Row must be odd number!")
-else:
-    printPattern(n)
+printPattern(n)
