@@ -30,4 +30,7 @@ def print_pattern(n):
 
 
 n = int(input("Enter a number: "))
-print_pattern(n)
+if n%2==0:
+    print("Enter odd number only!!!")
+else:
+    print_pattern(n)
