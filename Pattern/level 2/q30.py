@@ -1,12 +1,14 @@
 '''
-Enter a number: 7
-      *       
-    *   *     
-  *       *   
-*           * 
-  *       *   
-    *   *     
-      *  
+Enter a number: 9
+        * 
+      * * * 
+    *   *   * 
+  *     *     * 
+* * * * * * * * * 
+  *     *     * 
+    *   *   * 
+      * * * 
+        * 
 '''
 
 
@@ -16,7 +18,7 @@ def print_pattern(n):
     end = mid
     for i in range(1,n+1):
         for j in range(1, end+1):
-            if j==start or j==end :
+            if j==start or j==end or j==mid or i==mid:
                 print("* ", end='')
             else:
                 print("  ", end='')
