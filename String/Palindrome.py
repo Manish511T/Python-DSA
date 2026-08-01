@@ -1,5 +1,5 @@
 # Method 1
-'''
+
 def check_palindrome(s,length):
     start = 0
     end = length-1
@@ -10,15 +10,15 @@ def check_palindrome(s,length):
         start +=1
         end -=1
     return True
-'''
+
 
 # Method 2
-def check_palindrome(s,length):
-    rev = s[::-1]
-    if s==rev:
-        return True
-    else:
-        return False
+# def check_palindrome(s,length):
+#     rev = s[::-1]
+#     if s==rev:
+#         return True
+#     else:
+#         return False
     
 
 
