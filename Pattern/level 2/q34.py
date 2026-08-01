@@ -1,3 +1,17 @@
+'''
+Enter a number: 9
+* * * * * * * * * 
+* * * *   * * * * 
+* * *       * * * 
+* *           * * 
+*               * 
+*               * 
+*               * 
+*               * 
+*               * 
+'''
+
+
 def print_pattern(n):
     mid = n//2+1
     start = mid
