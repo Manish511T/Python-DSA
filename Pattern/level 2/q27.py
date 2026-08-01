@@ -1,3 +1,13 @@
+'''
+Enter a number: 7
+* * * * * * *
+  * * * * *
+    * * *
+      *
+    * * *
+  * * * * *
+* * * * * * * 
+'''
 
 def printPattern(n):
     mid = n//2+1
