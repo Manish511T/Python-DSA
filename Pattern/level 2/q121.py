@@ -1,21 +1,22 @@
 '''
 Enter a size of row: 5
 A               B               C               D               E 
-        A               B               C               D 
-                A               B               C 
-                        A               B 
-                                A 
-'''
+        F               G               H               I 
+                J               K               L 
+                        M               N 
+                                O 
 
+'''
 def print_pattern(n):
     pattern_size = n
     space = 0
-
+    num = 1
     for i in range(1, n+1):
         for j in range(1, space+1):
             print('\t', end='')
         for j in range(1, pattern_size+1):
-            print(chr(64+j), '\t\t', end='')
+            print(chr(64+num), '\t\t', end='')
+            num +=1
         pattern_size -=1
         space +=1
         print()
