@@ -17,29 +17,17 @@ def print_pattern(n):
     pattern_size = 1
     mid = n // 2 + 1
     space = mid - 1
-
+    num = 0
     for i in range(1, n + 1):
-
-        if i <= mid:
-            num = i - 1
-        else:
-            num = n - i
-
         for j in range(1, space + 1):
             print('\t', end='')
 
         colmid = pattern_size // 2 + 1
 
         for j in range(1, pattern_size + 1):
-
-            if j == colmid:
-                print(0, '\t', end='')
-                num = 1
-
-            elif j < colmid:
+            if j < colmid:
                 print(num, '\t', end='')
                 num -= 1
-
             else:
                 print(num, '\t', end='')
                 num += 1
@@ -48,6 +36,7 @@ def print_pattern(n):
             pattern_size += 2
             space -= 1
         else:
+            num -=2
             pattern_size -= 2
             space += 1
 
