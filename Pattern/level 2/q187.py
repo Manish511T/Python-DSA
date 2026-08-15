@@ -19,7 +19,7 @@ def print_pattern(n):
         num = 1
         for j in range(1,space+1):
             print('\t', end='')
-        colmid = pattern_size//2+1
+        
         for j in range(1, pattern_size+1):
             print(chr(64+num), '\t', end='')
             num +=1
