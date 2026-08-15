@@ -1,4 +1,13 @@
-
+'''
+Enter no. of row: 7
+                        1 
+                2       1       2 
+        3       2       1       2       3 
+4       3       2       1       2       3       4 
+        3       2       1       2       3 
+                2       1       2 
+                        1 
+'''
 def print_pattern(n):
     if n % 2 == 0:
         print("Odd number only!")
