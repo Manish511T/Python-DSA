@@ -1,6 +1,6 @@
 '''
-Enter number to print Finonacci series: 10
-0 0 1 1 2 4 7 13 24 44 
+Enter number to print Tribonacci series: 10
+0 0 1 1 2 4 7 13 24 44
 '''
 def print_series(n):
     first = 0
@@ -10,5 +10,5 @@ def print_series(n):
         print(first, end=' ')
         first, second, third = second,third ,first+second+third
 
-n = int(input("Enter number to print Finonacci series: "))
+n = int(input("Enter number to print Tribonacci series: "))
 print_series(n)
