@@ -1,12 +1,13 @@
 '''
-WAJP to generate numbers from 1 to 10 by using recursion.
+WAJP to generate numbers from 10 to 1 by
+using recursion.
 '''
 
 def printNumber(n):
     if n>10:
         return 
-
-    print(n)
+    
     printNumber(n+1)
+    print(n)
 
 printNumber(1)
