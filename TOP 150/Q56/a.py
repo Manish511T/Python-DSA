@@ -2,7 +2,7 @@
 #Implement binary search algorithm
 
 # using loop
-'''
+
 def binarySearch(a, target):
     low = 0
     high = len(a)-1
@@ -22,7 +22,7 @@ a = [8,10,12,18,20,23,35,40,55]
 res, count = binarySearch(a, 35)
 print("Target at index: ",res)
 print("Total iteration: ", count)
-'''
+
 
 
 # Using Recursion
